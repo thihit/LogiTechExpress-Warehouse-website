@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criar conta</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/logIn.css">
+</head>
+<body>
+
+    <header>
+        <h1>LogiTech Express</h1>
+
+       <nav>
+            <ul id="nav-list">
+                <li class="nav-item"><a class="nav-link" href="./index.html">Início</a></li>
+                <li class="nav-item"><a class="nav-link" href="./calc.html">Adicionar</a></li>
+                <li class="nav-item"><a class="nav-link" href="./signIn.html">Cadastre-se</a></li>
+            </ul>
+        </nav>
+
+
+        <div class="mobile-menu-icon">
+            <button onclick="menuShow()">
+                <i id="menuMobileIcon" class="fa-solid fa-bars mobile-menu-icon-i"></i>
+            </button>
+        </div>
+
+    </header>
+
+     <div class="mobile-menu">
+    <ul>
+        <li class="nav-item"><a class="nav-link" href="./index.html">Inicio</a></li>
+        <li class="nav-item"><a class="nav-link" href="./calc.html">Adicionar</a></li>
+        <li class="nav-item"><a class="nav-link" href="./signIn.html">Cadastre-se</a></li>
+    </ul>
+    </div>
+
+    <main id="formContainer">
+        <div id="formHeader">
+            <h1 id="formTitle">
+                Log in
+            </h1>
+            <button id="subscripe" class="btn-default">
+                <a id="signInBtn" href="./signIn.html">Cadastre</i></a>
+            </button>
+        </div>
+        <form action="" id="form">
+             
+                <div class="input-box">
+                    <label for="email" class="form-label">E-mail</label>
+                        <div class="input-field">
+                            <input type="email" name="email" id="email" class="form-control" placeholder="exemplo@gmail.com">
+                            <i class="fa-regular fa-envelope"></i>
+                        </div>
+                    </label>
+                </div>
+
+            
+                <div class="input-box">
+                    <label for="password" class="form-label">Senha</label>
+                        <div class="input-field">
+                            <input type="password" name="password" id="password" class="form-control" placeholder="********">
+                            <i class="fa-regular fa-eye-slash password-icon"></i>
+                        </div>
+                    </label>
+                </div>
+
+                
+            
+            <button class="btn-default" type="submit">
+                <i class="fa-solid fa-right-to-bracket"></i>
+                Entre agora
+            </button>
+        </form>
+
+    </main>
+    
+    
+</body>
+<script src="./script/signIn.js"></script>
+</html>
